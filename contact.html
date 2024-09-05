@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Infinity Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+       
+        .content {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #CADCFC;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #08034f;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0a0475;
+            font-size: 1.2em;
+        }
+
+        address {
+            font-size: 1.2em;
+            color: #050505;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        address a {
+            font-size: 1.5em;
+            color: #090909;
+            text-decoration: none;
+        }
+
+        address a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        form input {
+            padding: 8px;
+            width: 100%;
+            max-width: 400px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #0a0475;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #08034f;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>CONTACT INFORMATION</h1>
+        <nav>
+            <a href="web.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="courses.html">Courses</a>
+        </nav>
+        <address>
+            <p>Founder-Leo John</p>
+            <p>123, South Main Street, Thanjavur</p>
+            <p>Email: <a href="mailto:john@example.com">john@example.com</a></p>
+            <p>Phone: 123-456-7890</p>
+        </address>
+
+        <h2>Enquiry Form</h2>
+        <form action="submit_inquiry.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
